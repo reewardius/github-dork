@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Git Dork Helper</title>
+    <title>Github Dork Helper</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content='vsec7' name='author'/>
+    <meta content='reewardius' name='author'/>
     <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
             <td colspan="3"><button onclick="openAllLinks()">Open All Links</button></td>
         </tr>
     </table>        
-    <textarea id="keywords" cols="46" rows="10"></textarea> 
+    <textarea id="keywords" cols="100" rows="50"></textarea> 
     <br>
 
     <table>
@@ -59,7 +59,7 @@
                 if (index < links.length) {
                     window.open($(links[index]).attr("href"));
                     index++;
-                    setTimeout(openLink, 1000); // интервал в миллисекундах (здесь 1 секунда)
+                    setTimeout(openLink, 1200); // интервал в миллисекундах (здесь 1 секунда)
                 }
             }
 
