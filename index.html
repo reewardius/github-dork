@@ -21,9 +21,18 @@
         }
 
         function openAllLinks() {
-            $("#result a").each(function() {
-                window.open($(this).attr("href"));
-            });
+            var links = $("#result a");
+            var index = 0;
+
+            function openLink() {
+                if (index < links.length) {
+                    window.open($(links[index]).attr("href"));
+                    index++;
+                    setTimeout(openLink, 1000); // интервал в миллисекундах (здесь 1 секунда)
+                }
+            }
+
+            openLink();
         }
     </script>
     <script src="jquery-2.1.3.min.js"></script>
