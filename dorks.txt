@@ -1,9 +1,9 @@
-access
 access_key
 access_token
 admin_key
 admin_pass
 admin_user
+amazon
 amazonaws
 api_key
 api_secret
@@ -17,6 +17,8 @@ auth_token
 authorization
 aws
 azure
+basic
+bearer
 config
 connection
 credentials
@@ -26,7 +28,6 @@ db_username
 dev
 docker
 firebase
-fozzy.lan
 gcp
 gh_token
 gitlab
